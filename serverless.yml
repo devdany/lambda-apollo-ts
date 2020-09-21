@@ -1,0 +1,23 @@
+app: apollo-lambda-app
+service: apollo-lambda
+provider:
+  name: aws
+  runtime: nodejs12.x
+  region: ap-northeast-2
+functions:
+  graphql:
+    handler: src/index.graphqlHandler
+    events:
+      - http:
+          path: graphql
+          method: post
+          cors: true
+      - http:
+          path: graphql
+          method: get
+          cors: true
+plugins:
+  - serverless-webpack
+custom:
+  webpack:
+    includeModules: true
