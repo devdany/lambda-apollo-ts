@@ -14,23 +14,18 @@
     "@types/jest": "^26.0.14",
     "apollo-server": "^2.17.0",
     "apollo-server-lambda": "^2.17.0",
-    "copy-webpack-plugin": "^6.1.1",
     "graphql": "^15.3.0",
-    "graphql-tag": "^2.11.0",
     "graphql-tools": "^6.2.3",
-    "jest": "^26.4.2",
-    "merge-graphql-schemas": "^1.7.8",
-    "ts-jest": "^26.4.0",
-    "ts-node": "^9.0.0",
-    "webpack-graphql-loader": "^1.0.2"
+    "jest": "^26.4.2"
   },
   "devDependencies": {
     "serverless-offline": "^6.7.0",
-    "serverless-webpack": "^5.3.5",
+    "serverless-plugin-typescript": "^1.1.9",
+    "ts-jest": "^26.4.0",
     "ts-loader": "^8.0.4",
+    "ts-node": "^9.0.0",
     "typescript": "^4.0.3",
-    "webpack": "^4.44.2",
-    "webpack-node-externals": "^2.5.2"
+    "webpack": "^4.44.2"
   },
   "jest": {
     "transform": {
@@ -39,13 +34,11 @@
     "testRegex": "\\.test\\.ts$",
     "moduleFileExtensions": [
       "ts",
-      "tsx",
-      "js",
-      "json"
+      "js"
     ],
     "globals": {
       "ts-jest": {
-        "diagnostics": true
+        "enableTsDiagnostics": true
       }
     }
   }
