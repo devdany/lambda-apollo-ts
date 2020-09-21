@@ -1,0 +1,4 @@
+
+type Mutation {
+  setHello(hello: String): String
+}

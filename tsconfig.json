@@ -14,8 +14,9 @@
     "removeComments": true,
     "skipLibCheck": true,
     "sourceMap": true,
+    "typeRoots": ["node_modules/@types", "src/@types"],
     "strict": true
   },
-  "exclude": ["node_modules", "src/**/*.test.ts"],
+  "exclude": ["node_modules", "src/**/*.spec.ts"],
   "include": ["src/**/*.ts"]
 }

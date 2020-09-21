@@ -1,10 +1,9 @@
 import { ApolloServer } from 'apollo-server-lambda';
 
-import { typeDefs, resolvers } from './graphql/schema';
+import schema from './schema';
 
 const server = new ApolloServer({
-  typeDefs,
-  resolvers
+  schema
 });
 
 const options: any = {

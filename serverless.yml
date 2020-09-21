@@ -18,6 +18,7 @@ functions:
           cors: true
 plugins:
   - serverless-webpack
+  - serverless-offline
 custom:
   webpack:
     includeModules: true
