@@ -1,21 +1,21 @@
 {
   "compilerOptions": {
-    "emitDecoratorMetadata": true,
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "lib": ["esnext"],
-    "module": "CommonJS",
-    "moduleResolution": "node",
-    "outDir": ".build",
-    "preserveConstEnums": true,
-    "rootDir": "./",
+    "module": "commonjs",
     "target": "es6",
-    "removeComments": true,
-    "skipLibCheck": true,
+    "lib": ["es6", "dom"],
+    "moduleResolution": "node",
+    "rootDir": "./",
     "sourceMap": true,
-    "strict": true
+    "allowJs": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "preserveConstEnums": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["node_modules", "src/**/*.test.ts"],
-  "include": ["src/**/*.ts"]
+  "exclude": ["node_modules", "build", "webpack"],
+  "types": ["typePatches"]
 }
