@@ -6,8 +6,11 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const apollo_server_1 = require("apollo-server");
 const mutation_1 = __importDefault(require("./mutation"));
 const query_1 = __importDefault(require("./query"));
-exports.default = apollo_server_1.gql `
-  ${mutation_1.default}
-  ${query_1.default}
+const model_1 = __importDefault(require("./model"));
+const graphql = apollo_server_1.gql `
+${model_1.default}
+${mutation_1.default}
+${query_1.default}
 `;
+exports.default = graphql;
 //# sourceMappingURL=index.js.map

@@ -11,12 +11,19 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@types/bluebird": "^3.5.32",
     "@types/jest": "^26.0.14",
+    "@types/node": "^14.11.2",
+    "@types/validator": "^13.1.0",
     "apollo-server": "^2.17.0",
     "apollo-server-lambda": "^2.17.0",
     "graphql": "^15.3.0",
     "graphql-tools": "^6.2.3",
-    "jest": "^26.4.2"
+    "jest": "^26.4.2",
+    "mysql2": "^2.2.3",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^5.15.1",
+    "sequelize-typescript": "^1.1.0"
   },
   "devDependencies": {
     "serverless-offline": "^6.7.0",

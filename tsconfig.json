@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
     "emitDecoratorMetadata": true,
+    "noImplicitAny": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
     "lib": ["esnext"],
     "module": "CommonJS",

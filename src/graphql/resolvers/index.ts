@@ -1,10 +1,13 @@
 import helloResolver from './helloResolvers'
+import userResolver from './userResolvers'
 
 export default {
   Query: {
-    ...helloResolver.Query
+    ...helloResolver.Query,
+    ...userResolver.Query
   },
   Mutation: {
-    ...helloResolver.Mutation
+    ...helloResolver.Mutation,
+    ...userResolver.Mutation
   }
 }

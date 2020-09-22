@@ -1,10 +1,13 @@
-import { ApolloServer } from 'apollo-server-lambda';
+import 'reflect-metadata'
+import { ApolloServer } from 'apollo-server-lambda'
+import { connect } from './sequelize'
+import schema from './schema'
 
-import schema from './schema';
+connect()
 
 const server = new ApolloServer({
   schema
-});
+})
 
 const options: any = {
   cors: {
@@ -14,4 +17,4 @@ const options: any = {
   endpointURL: '/graphql',
 }
 
-export const graphqlHandler = server.createHandler(options);
+export const graphqlHandler = server.createHandler(options)
